@@ -143,6 +143,7 @@ const struct eventop wepollops = {
 	0
 };
 #else
+// 基于 epoll 封装的函数
 const struct eventop epollops = {
 	"epoll",
 	epoll_init,
