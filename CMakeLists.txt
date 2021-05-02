@@ -915,7 +915,7 @@ if (NOT EVENT__DISABLE_OPENSSL)
 endif()
 
 if (NOT EVENT__DISABLE_MBEDTLS)
-    find_package(MbedTLS REQUIRED)
+    find_package(MbedTLS REQUIRED)  #  brew install mbedtls 解决mac clion 编译 报错
 
     set(EVENT__HAVE_MBEDTLS 1)
 
